@@ -22,17 +22,6 @@ export class UserController {
       data: users,
     })
   }
-  @Get('/')
-  async test(
-    @Res() res: Response,
-  ) {
-    const users = await this.userService.getAllUsers()
-
-    return res.send({
-      status: 'ok',
-      data: users,
-    })
-  }
   @Get('/:id')
   async getUser(
     @Param('id', ParseIntPipe) id: number,
