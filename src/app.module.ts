@@ -2,7 +2,6 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from './config.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { UsersModule } from './users/users.module';
 import { TypeOrmModule } from './db/typeorm.module';
 import { UserModule } from '@entities/user/user.module';
 @Module({
